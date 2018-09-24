@@ -1,29 +1,26 @@
-void setup()
-{
+Dice bob;
+void setup(){
 	noLoop();
+	bob = new Dice();
 }
-void draw()
-{
-	//your code here
+void draw(){
+	bob.roll();
 }
-void mousePressed()
-{
+void mousePressed(){
 	redraw();
 }
-class Die //models one single dice cube
-{
-	//variable declarations here
-	
-	Die(int x, int y) //constructor
+class Dice{
+	int myX, myY, dots;
+	Dice(int x, int y) //constructor
 	{
-		//variable initializations here
+		myX = x;
+		myY = y;
 	}
-	void roll()
-	{
-		//your code here
+	void roll(){
+		dots = (int)(Math.random()*7);
+		System.out.println("dots: "+dots);
 	}
-	void show()
-	{
+	void show(){
 		//your code here
 	}
 }
