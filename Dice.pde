@@ -20,7 +20,7 @@ class Die{
 		myY = y;
 	}
 	void roll(){
-		dots = 2; //(int)(Math.random()*7);
+		dots = (int)(Math.random()*7);
 
 	}
 	void show(){
@@ -32,8 +32,29 @@ class Die{
 				ellipse(27 + myX, 27 + myY, 18, 18);
 				break;
 			case 2:
-				ellipse(5 + myX, 5 + myY, 12, 12);
-
+				ellipse(15 + myX, 15 + myY, 16, 16);
+				ellipse(40 + myX, 40 + myY, 16, 16);
+				break;
+			case 3:
+				ellipse(13 + myX, 13 + myY, 16, 16);
+				ellipse(28 + myX, 28 + myY, 16, 16);
+				ellipse(42 + myX, 42 + myY, 16, 16);
+				break;
+			case 4:
+				ellipse(15 + myX, 15 + myY, 16, 16);
+				ellipse(40 + myX, 15 + myY, 16, 16);
+				ellipse(15 + myX, 40 + myY, 16, 16);
+				ellipse(40 + myX, 40 + myY, 16, 16);
+				break;
+			case 5:
+				ellipse(13 + myX, 13 + myY, 16, 16);
+				ellipse(42 + myX, 13 + myY, 16, 16);
+				ellipse(13 + myX, 42 + myY, 16, 16);
+				ellipse(42 + myX, 42 + myY, 16, 16);
+				ellipse(55/2 + myX, 55/2 + myY, 16, 16);
+				break;
+			case 6:
+			
 			default :
 				System.out.println("fail");
 				break;
