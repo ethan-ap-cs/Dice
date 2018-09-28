@@ -20,7 +20,7 @@ void draw(){
 		}
 	}
 	textSize(20);
-	text("sum:" + sum, 825/2 - 40, 895);
+	text("sum:" + sum, 825/2 - 40, 897);
 }
 void mousePressed(){
 	redraw();
